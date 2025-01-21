@@ -33,19 +33,19 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Contact Us",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "url": "https://zyvik.com/contact"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://zyvik.com/blog"
+    },
+    {
+      "name": "Changelog",
+      "icon": "newspaper",
+      "url": "https://zyvik.com/changelog"
     }
   ],
   "navigation": [
