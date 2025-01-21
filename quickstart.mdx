@@ -13,8 +13,6 @@ description: "Zyvik allows you to get content from a website and integrate it in
 
 **Note:** You must use the API key to authenticate requests to API
 
-
-
 ## Scraping
 
 ```
@@ -27,4 +25,20 @@ curl --location 'https://api.zyvik.com/v1/scrape' \
 }'
 ```
 
-##
+## Crawling
+
+```
+curl --location 'https://api.zyvik.com/v1/crawl' \
+--header 'x-zyvik-api-key: <PASTE YOUR API KEY HERE>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "url": "https://docs.zyvik.com",
+    "format": "markdown", 
+    "maxPages": 1,  
+    "concurrent": 5
+}'
+```
+
+## Searching
+
+Coming soon
