@@ -29,4 +29,20 @@ curl --location 'https://api.zyvik.com/v1/scrape' \
   </ParamField>
 </ParamField>
 
-##
+## Response
+
+<ResponseField name="results" type="object">
+  /em
+</ResponseField>
+
+<ResponseField name="metadata" type="Metadata Object">
+  <Expandable title="properties">
+    <ResponseField name="timestamp" type="string">
+      Response success timestamp
+    </ResponseField>
+
+    <ResponseField name="wordCount" type="integer">
+      Total words of scraped content
+    </ResponseField>
+  </Expandable>
+</ResponseField>
