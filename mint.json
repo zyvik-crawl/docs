@@ -33,11 +33,6 @@
   ],
   "anchors": [
     {
-      "name": "Contact Us",
-      "icon": "book-open-cover",
-      "url": "https://zyvik.com/contact"
-    },
-    {
       "name": "Blog",
       "icon": "newspaper",
       "url": "https://zyvik.com/blog"
@@ -46,7 +41,12 @@
       "name": "Changelog",
       "icon": "newspaper",
       "url": "https://zyvik.com/changelog"
-    }
+    },
+    {
+      "name": "Contact Us",
+      "icon": "book-open-cover",
+      "url": "mailto:hello@zyvik.com"
+    },
   ],
   "navigation": [
     {
