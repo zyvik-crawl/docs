@@ -11,15 +11,15 @@ You can create unlimited API keys in your account.
 
 You need to include "x-zyvik-api-key" in your API request header in order to authenticate.
 
-```
-x-zyvik-api-key: zv-<YOUR API KEY>
+```json
+--header 'x-zyvik-api-key: zv-<YOUR API KEY>'
 ```
 
 ## Unauthorized Error
 
 If the API failed to authenticate your API request, it will return 401 error code.
 
-```
+```json
 {
     "error": "Unauthorized",
     "details": "Invalid or wrong API key. Please check https://docs.zyvik.com/api-key"
