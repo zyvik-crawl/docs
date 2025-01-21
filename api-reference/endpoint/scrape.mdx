@@ -1,0 +1,14 @@
+---
+title: "Scrape"
+description: "Scrape a single URL"
+---
+
+```json
+curl --location 'https://api.zyvik.com/v1/scrape' \
+--header 'x-zyvik-api-key: zv-<YOUR API KEY>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "url": "https://docs.zyvik.com/",
+    "format": "markdown"
+}'
+```
