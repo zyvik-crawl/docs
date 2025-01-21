@@ -31,10 +31,6 @@ curl --location 'https://api.zyvik.com/v1/scrape' \
 
 ## Response
 
-<ResponseField name="results" type="object">
-  /em
-</ResponseField>
-
 <ResponseField name="metadata" type="Metadata Object">
   <Expandable title="properties">
     <ResponseField name="timestamp" type="string">
@@ -44,5 +40,53 @@ curl --location 'https://api.zyvik.com/v1/scrape' \
     <ResponseField name="wordCount" type="integer">
       Total words of scraped content
     </ResponseField>
+
+    <ResponseField name="hasImages" type="boolean">
+      If the content has images
+    </ResponseField>
+
+    <ResponseField name="url" type="string">
+      Scraped URL
+    </ResponseField>
+
+    <ResponseField name="ogTags" type="object">
+      OG tags of the URL
+    </ResponseField>
+
+    <Expandable title="properties">
+      <ResponseField name="title" type="string">
+        The title of the OG tag
+      </ResponseField>
+
+      <ResponseField name="type" type="string">
+        Type of the content
+      </ResponseField>
+
+      <ResponseField name="url" type="string">
+        The URL of the OG tag
+      </ResponseField>
+
+      <ResponseField name="description" type="string">
+        The description of the OG tag
+      </ResponseField>
+
+      <ResponseField name="image" type="string">
+        The image of the OG tag
+      </ResponseField>
+
+      <ResponseField name="siteName" type="string">
+        The name of the OG tag
+      </ResponseField>
+    </Expandable>
+
+    <ResponseField name="format" type="string">
+      Output response format
+    </ResponseField>
+
+    <ResponseField name="markdown" type="string">
+      Output response
+    </ResponseField>
   </Expandable>
 </ResponseField>
+
+<ResponseField name="markdown" type="string" />
