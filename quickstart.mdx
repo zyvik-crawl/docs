@@ -3,12 +3,28 @@ title: "Quickstart"
 description: "Zyvik allows you to get content from a website and integrate it into LLM with markdown format."
 ---
 
-## How to get started?
+## Prerequisites
 
 1. Register your account at [https://dashboard.zyvik.com](https://dashboard.zyvik.com)
 
-2. Buy credits on [https://dashboard.zyvik.com/credits](https://dashboard.zyvik.com/credits)
+2. Purchase credits at [https://dashboard.zyvik.com/credits](https://dashboard.zyvik.com/credits)
 
-3. Create a new API key on [https://dashboard.zyvik.com/keys](https://dashboard.zyvik.com/keys)
+3. Create a new API key at [https://dashboard.zyvik.com/keys](https://dashboard.zyvik.com/keys)
 
-Now you can use Zyvik.
+**Note:** You must use the API key to authenticate requests to API
+
+
+
+## Scraping
+
+```
+curl --location 'https://api.zyvik.com/v1/scrape' \
+--header 'x-zyvik-api-key: <PASTE YOUR API KEY HERE>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "url": "https://docs.zyvik.com/",
+    "format": "markdown"
+}'
+```
+
+##
