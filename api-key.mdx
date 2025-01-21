@@ -8,3 +8,20 @@ An API key is required to use Zyvik. The API key is used to authenticate your AP
 To obtain an API key, you need to [sign up](https://dashboard.zyvik.com) and [create a new API key.](https://dashboard.zyvik.com/keys)
 
 You can create unlimited API keys in your account.
+
+You need to include "x-zyvik-api-key" in your API request header in order to authenticate.
+
+```
+x-zyvik-api-key: zv-<YOUR API KEY>
+```
+
+## Unauthorized Error
+
+If the API failed to authenticate your API request, it will return 401 error code.
+
+```
+{
+    "error": "Unauthorized",
+    "details": "Invalid or wrong API key. Please check https://docs.zyvik.com/api-key"
+}
+```
