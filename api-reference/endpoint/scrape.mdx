@@ -15,22 +15,20 @@ curl --location 'https://api.zyvik.com/v1/scrape' \
 
 ## Authorization
 
-\<ParamField path="param" type="string">
-
-&#x20; An example of a parameter field
-
-\</ParamField>
-
-
-
-Pass this to header to authenticate API request
+<ParamField header="x-zyvik-api-key" type="string" required="yes">
+  Header authentication `zv-<API KEY>`
+</ParamField>
 
 ## Body
 
-*url*
+<ParamField body="url" type="string" required={true}>
+  Single URL to scrape
 
-URL that you want to scrape
+  <ParamField body="format" type="string" default="markdown" required>
+    The return format
+  </ParamField>
 
-*format*
 
-The return format
+</ParamField>
+
+##
