@@ -17,6 +17,8 @@ description: "Zyvik allows you to get content from a website and integrate it in
 
 API endpoint /scrape
 
+Use /scrape for single url. It take url and format parameters and return as a dictionary.
+
 ```
 curl --location 'https://api.zyvik.com/v1/scrape' \
 --header 'x-zyvik-api-key: <PASTE YOUR API KEY HERE>' \
@@ -30,6 +32,8 @@ curl --location 'https://api.zyvik.com/v1/scrape' \
 ## Crawling
 
 API endpoint /crawl
+
+Use /crawl to crawl all accessible pages. Zyvik will start to detect a sitemap and crawl the urls. If a sitemap doesn't exists, Zyvik will crawl all accessible pages. It take url, format, maxPages and concurrent parameters.
 
 ```
 curl --location 'https://api.zyvik.com/v1/crawl' \
