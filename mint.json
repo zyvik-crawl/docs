@@ -54,8 +54,8 @@
       "pages": [
         "introduction",
         "quickstart",
-        "api-key",
-        "rate-limit"
+        "api-keys",
+        "rate-limits"
       ]
     },
     {
