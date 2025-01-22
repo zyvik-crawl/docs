@@ -31,6 +31,33 @@ curl --location 'https://api.zyvik.com/v1/scrape' \
 }'
 ```
 
+Response
+
+```json
+{
+    "results": {
+        "metadata": {
+            "timestamp": "2025-01-21T12:39:26.993Z",
+            "wordCount": 1283,
+            "hasImages": true,
+            "domain": "docs.zyvik.com",
+            "ogTags": {
+                "title": "Introduction - Documentation",
+                "type": "website",
+                "url": "/introduction",
+                "description": "Zyvik is a web scraping tool that helps you to build AI apps faster. With the support of markdown format, Zyvik works well with LLM and AI agents.",
+                "image": "https://mintlify.com/docs/api/og?division=Documentation&title=Introduction&description=Zyvik+is+a+web+scraping+tool+that+helps+you+to+build+AI+apps+faster.+With+the+support+of+markdown+format%2C+Zyvik+works+well+with+LLM+and+AI+agents.&logoLight=https%3A%2F%2Fmintlify.s3.us-west-1.amazonaws.com%2Fzyvik%2Flogo%2Fzyvik-dark.png&logoDark=https%3A%2F%2Fmintlify.s3.us-west-1.amazonaws.com%2Fzyvik%2Flogo%2Fzyvik-logo.svg&primaryColor=%23674ea7&lightColor=%23674ea7&darkColor=%23674ea7",
+                "siteName": "Documentation"
+            },
+            "format": "markdown"
+        },
+        "markdown": "# Introduction - Documentation\n\n## Metadata\n- Source: https://docs.zyvik.com/\n- Domain: docs.zyvik.com\n- Date: 2025-01-21T12:39:26.993Z\n- Word Count: 1283\n- Contains Images: Yes\n\n## Content\nDocumentation home page Search or ask... Support Dashboard Dashboard Search... Navigation Get Started Introduction Documentation API Reference Blog Changelog Contact Us Get Started Introduction Quickstart API Keys Rate Limits Get Started Introduction Zyvik is a web scraping tool that helps you to build AI apps faster. With the support of markdown format, Zyvik works well with LLM and AI agents. ​ Features Content Extraction : Extract content for a website and return them in a markdown format Robust Scraping &amp; Crawling : Zyvik is built with simplicity for speed. Enter any url and get the content to markdown format in seconds Playground : Explore our scraping and crawling tool before integrating to your apps Built for AI : Zyvik is built to support LLM and AI agents Storage : Crawled contents are stored in a JSON format and can be accessed in our dashboard Exclude &amp; Limit Pages : Exclude URLs &amp; limit pages from a crawler job Concurrent Request : Concurrent request feature for crawling to deliver the fastest results No Cache : There is no caching to ensure you get the latest content Dynamic Agent Header : Zyvik is equipped with dynamic agent header to provide the best scraping experience Quickstart x Powered by Mintlify On this page Features"
+    }
+}
+```
+
+
+
 ## Crawling
 
 API endpoint /crawl
