@@ -45,8 +45,8 @@ curl --location 'https://api.zyvik.com/v1/scrape' \
       If the content has images
     </ResponseField>
 
-    <ResponseField name="url" type="string">
-      Scraped URL
+    <ResponseField name="domain" type="string">
+      Domain of the URL
     </ResponseField>
 
     <ResponseField name="ogTags" type="object">
@@ -89,4 +89,6 @@ curl --location 'https://api.zyvik.com/v1/scrape' \
   </Expandable>
 </ResponseField>
 
-<ResponseField name="markdown" type="string" />
+<ResponseField name="markdown" type="string">
+  Output response in markdown format
+</ResponseField>

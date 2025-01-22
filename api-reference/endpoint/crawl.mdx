@@ -41,7 +41,9 @@ curl --location 'https://api.zyvik.comv1/crawl' \
 
 ## Response
 
-<ResponseField name="markdown" type="string" />
+<ResponseField name="markdown" type="string">
+  Output response in markdown format
+</ResponseField>
 
 <ResponseField name="metadata" type="Metadata Object">
   <Expandable title="properties">
@@ -57,8 +59,8 @@ curl --location 'https://api.zyvik.comv1/crawl' \
       If the content has images
     </ResponseField>
 
-    <ResponseField name="url" type="string">
-      Scraped URL
+    <ResponseField name="domain" type="string">
+      Domain of the URL
     </ResponseField>
 
     <ResponseField name="ogTags" type="object">
@@ -106,7 +108,7 @@ curl --location 'https://api.zyvik.comv1/crawl' \
 </ResponseField>
 
 <ResponseField name="format" type="string">
-
+  Output format
 </ResponseField>
 
 ##
