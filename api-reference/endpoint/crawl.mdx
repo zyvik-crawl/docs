@@ -2,3 +2,111 @@
 title: "Crawl"
 description: "Crawl all accessible pages"
 ---
+
+```json
+curl --location 'https://api.zyvik.comv1/crawl' \
+--header 'x-zyvik-api-key: zv-<YOUR API KEY>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "url": "https://docs.zyvik.com",
+    "format": "markdown", 
+    "maxPages": 1,  
+    "concurrent": 5
+}'
+```
+
+## Authentication
+
+<ParamField header="x-zyvik-api-key" type="string" required="yes">
+  Header authentication `zv-<API KEY>`
+</ParamField>
+
+## Body
+
+<ParamField body="url" type="string" required={true}>
+  Single URL to scrape
+</ParamField>
+
+<ParamField body="format" type="string" default="markdown" required>
+  Format for the output response
+</ParamField>
+
+<ParamField body="maxPages" type="integer" required={true} placeholder="Maximum page to crawl">
+  Maximum pages to crawl
+</ParamField>
+
+<ParamField body="concurrent" type="integer">
+  Number of concurrent connection
+</ParamField>
+
+## Response
+
+<ResponseField name="markdown" type="string" />
+
+<ResponseField name="metadata" type="Metadata Object">
+  <Expandable title="properties">
+    <ResponseField name="timestamp" type="string">
+      Response success timestamp
+    </ResponseField>
+
+    <ResponseField name="wordCount" type="integer">
+      Total words of scraped content
+    </ResponseField>
+
+    <ResponseField name="hasImages" type="boolean">
+      If the content has images
+    </ResponseField>
+
+    <ResponseField name="url" type="string">
+      Scraped URL
+    </ResponseField>
+
+    <ResponseField name="ogTags" type="object">
+      OG tags of the URL
+    </ResponseField>
+
+    <Expandable title="properties">
+      <ResponseField name="title" type="string">
+        The title of the OG tag
+      </ResponseField>
+
+      <ResponseField name="type" type="string">
+        Type of the content
+      </ResponseField>
+
+      <ResponseField name="url" type="string">
+        The URL of the OG tag
+      </ResponseField>
+
+      <ResponseField name="description" type="string">
+        The description of the OG tag
+      </ResponseField>
+
+      <ResponseField name="image" type="string">
+        The image of the OG tag
+      </ResponseField>
+
+      <ResponseField name="siteName" type="string">
+        The name of the OG tag
+      </ResponseField>
+    </Expandable>
+
+    <ResponseField name="format" type="string">
+      Output response format
+    </ResponseField>
+
+    <ResponseField name="markdown" type="string">
+      Output response
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseField name="pageScraped" type="integer">
+  Total scraped page
+</ResponseField>
+
+<ResponseField name="format" type="string">
+
+</ResponseField>
+
+##
