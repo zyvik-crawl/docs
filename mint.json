@@ -5,7 +5,7 @@
     "dark": "/logo/zyvik-logo.svg",
     "light": "/logo/zyvik-dark.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/zyvik-favicon.svg",
   "colors": {
     "primary": "#674ea7",
     "light": "#674ea7",
